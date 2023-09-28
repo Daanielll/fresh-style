@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 export function Sidebar({ onSidebarClose }) {
   const [showText, setShowText] = useState(false);
-  const barWidth = showText ? "w-[80vw] overflow-auto" : "w-0 overflow-hidden";
+  const barWidth = showText
+    ? "w-[80vw] md:w-[50vw] overflow-auto"
+    : "w-0 overflow-hidden";
 
   useEffect(() => {
     setShowText(true);
@@ -17,7 +19,7 @@ export function Sidebar({ onSidebarClose }) {
         {
           <>
             <AiOutlineClose
-              className="absolute right-6 text-2xl"
+              className="absolute right-6 text-2xl text-slate-700"
               onClick={() => {
                 setShowText(false);
                 // onSidebarClose();
@@ -32,7 +34,7 @@ export function Sidebar({ onSidebarClose }) {
               X
             </AiOutlineClose>
 
-            <ul className="child:text-2xl child:font-bold child:my-6 mx-8">
+            <ul className="child:text-2xl child:font-bold child:my-6 mx-8 text-slate-700">
               <li onClick={onSidebarClose}>
                 <Link to="/">Home</Link>
               </li>

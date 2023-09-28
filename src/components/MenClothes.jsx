@@ -1,5 +1,6 @@
 import { useQuery } from "react-query";
 import { PropTypes } from "prop-types";
+import { Cards } from "./Cards";
 
 export function MenClothes({ cartItems, setCartItems }) {
   async function fetchData() {
@@ -9,16 +10,6 @@ export function MenClothes({ cartItems, setCartItems }) {
     return res.json();
   }
   const { data, status } = useQuery("menProdcuts", fetchData);
-
-  const handleAddToCart = (item) => {
-    const itemIndex = cartItems.findIndex((i) => i.title == item.title);
-
-    if (itemIndex != -1) {
-      const updatedCart = [...cartItems];
-      updatedCart[itemIndex].quantity += 1;
-      setCartItems(updatedCart);
-    } else setCartItems([...cartItems, { ...item, quantity: 1 }]);
-  };
 
   if (status == "loading")
     return (
@@ -51,31 +42,17 @@ export function MenClothes({ cartItems, setCartItems }) {
         <h1 className="text-center py-5 text-2xl  font-Merriweather border-y-[0.15rem] border-neutral-200">
           Men
         </h1>
-        <div className="grid grid-cols-2 gap-2 p-2">
+        <div className="grid grid-cols-2 gap-2 p-2 md:grid-cols-3 md:p-6 md:gap-6 lg:grid-cols-5 max-w-[1600px] mx-auto">
           {data.map((item, i) => (
             <div
               key={i}
               className="flex flex-col justify-between bg-white h-full rounded-xl  p-1 shadow-custom text-slate-800"
             >
-              <div className="flex flex-col  p-3  bg-white ">
-                <img
-                  className=" h-[30vw] w-fit mx-auto my-2"
-                  src={item.image}
-                  alt={item.title}
-                />
-                <h1 className="my-1 text-sm">{item.title}</h1>
-
-                <p className="font-bold text-slate-500">{`$${item.price}`}</p>
-              </div>
-
-              <div className="flex justify-center">
-                <button
-                  onClick={() => handleAddToCart(item)}
-                  className="font-bold text-xs rounded-mg border-2 rounded-md border-slate-200 bg-white shadow-md px-5 py-2 mb-4 text-slate-500"
-                >
-                  Add To Cart
-                </button>
-              </div>
+              <Cards
+                item={item}
+                cartItems={cartItems}
+                setCartItems={setCartItems}
+              ></Cards>
             </div>
           ))}
         </div>

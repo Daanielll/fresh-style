@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,7 @@
 :root {
   font-family: Helvetica, Arial, sans-serif;
 }
+
 .animate-width {
   transition: width 400ms ease-out, padding 200ms ease-out;
 }
