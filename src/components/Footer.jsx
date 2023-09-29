@@ -28,7 +28,7 @@ export function Footer() {
       </div>
 
       <div className="p-6 text-xs flex w-full max-w-[1600px] m-auto justify-between items-center">
-        <span>© 2023 Fresh Style Co. All Rights Reserved</span>
+        <span>© 2023 Daniel Moshe. All Rights Reserved</span>
         <div className="hidden lg:flex text-2xl py-6 gap-8 child:cursor-pointer ">
           <FaInstagram></FaInstagram> <FaFacebook></FaFacebook>
           <FaTiktok></FaTiktok> <FaXTwitter></FaXTwitter>
