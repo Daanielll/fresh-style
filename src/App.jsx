@@ -25,7 +25,7 @@ function App() {
         <Sidebar onSidebarClose={() => setShowSidebar(false)}></Sidebar>
       )}
       <ScrollToTop></ScrollToTop>
-      <div className="min-h-[100dvh] flex flex-col justify-between child:w-full">
+      <div className="lg:min-h-[100vh] lg:flex lg:flex-col lg:justify-between lg:child:w-full">
         <Routes>
           <Route path="/" element={<HomeScreen></HomeScreen>}></Route>
 

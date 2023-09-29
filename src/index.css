@@ -12,13 +12,6 @@
 .animate-width {
   transition: width 400ms ease-out, padding 200ms ease-out;
 }
-.absolute-center {
-  position: fixed;
-  top: 20px; /* Place 20px below the top of the screen */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%);
-  z-index: 1000;
-}
 
 @layer components {
   .home-btns {
