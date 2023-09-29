@@ -9,7 +9,7 @@ export function WomenClothes({ cartItems, setCartItems }) {
     );
     return res.json();
   }
-  const { data, status } = useQuery("womenpProdcuts", fetchData);
+  const { data, status } = useQuery("womenProdcuts", fetchData);
 
   if (status == "loading")
     return (

@@ -42,7 +42,7 @@ export function MenClothes({ cartItems, setCartItems }) {
         <h1 className="text-center py-5 text-2xl  font-Merriweather border-y-[0.15rem] border-neutral-200">
           Men
         </h1>
-        <div className="grid grid-cols-2 gap-2 p-2 md:grid-cols-3 md:p-6 md:gap-6 lg:grid-cols-5 max-w-[1600px] mx-auto">
+        <div className="grid grid-cols-2 gap-2 p-2 md:grid-cols-3 md:p-6 md:gap-6 lg:grid-cols-5 max-w-[1600px] m-auto">
           {data.map((item, i) => (
             <div
               key={i}
