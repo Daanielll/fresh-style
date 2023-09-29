@@ -1,8 +1,51 @@
-# React + Vite
+# Fresh Style Online Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Fresh Style, an online clothing store built with React! Shop the latest trends in fashion, discover cozy and stylish clothing for every season, and enjoy a seamless shopping experience.
 
-Currently, two official plugins are available:
+🌐 **Live Demo**: [Fresh Style Online Store](https://6515f6dfca192c0aafa1a2b5--leafy-speculoos-ff9554.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- Browse a wide range of clothing for men and women.
+- Add items to your cart and review your selections.
+
+## Technologies Used
+
+- **React**: The core framework for building the user interface.
+- **React Router**: For handling navigation and routing.
+- **Tailwind CSS**: Used for styling the application.
+- **Netlify**: The platform used for deployment.
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Daanielll/fresh-style.git
+```
+
+2. Navigate to the project directory::
+
+```bash
+cd fresh-style
+```
+
+3. Install the project dependencies::
+
+```bash
+npm install
+```
+
+### Usage
+
+1.Start the development server::
+
+```bash
+npm run dev
+```
+
+2.Open your browser and visit http://localhost:3000 to see the website in action.
+
+### License
+
+This project is licensed under the MIT License.
