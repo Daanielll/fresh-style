@@ -2,7 +2,7 @@
 
 Welcome to Fresh Style, an online clothing store built with React! Shop the latest trends in fashion, discover cozy and stylish clothing for every season, and enjoy a seamless shopping experience.
 
-🌐 **Live Demo**: [Fresh Style Online Store](https://6515f6dfca192c0aafa1a2b5--leafy-speculoos-ff9554.netlify.app/)
+🌐 **Live Demo**: [Fresh Style Online Store](https://main--leafy-speculoos-ff9554.netlify.app/)
 
 ## Features
 
